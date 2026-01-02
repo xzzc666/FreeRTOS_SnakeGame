@@ -1,0 +1,6 @@
+../Core/Src/ClassSnake.c:10:5:Snake_SetUp	48	static
+../Core/Src/ClassSnake.c:61:6:Snake_SetDir	16	static
+../Core/Src/ClassSnake.c:76:5:Snake_SetFood	48	static
+../Core/Src/ClassSnake.c:127:12:Snake_Detect	24	static
+../Core/Src/ClassSnake.c:166:5:Snake_Move	40	static
+../Core/Src/ClassSnake.c:248:6:Snake_Restart	32	static

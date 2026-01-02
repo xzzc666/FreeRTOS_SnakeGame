@@ -1,0 +1,5 @@
+../Core/Src/freertos.c:136:6:MX_FREERTOS_Init	1
+../Core/Src/freertos.c:204:6:StartDefaultTask	1
+../Core/Src/freertos.c:222:6:StartGameLogic	11
+../Core/Src/freertos.c:285:6:StartStick	5
+../Core/Src/freertos.c:330:6:StartScreen	7
