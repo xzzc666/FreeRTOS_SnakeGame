@@ -21,6 +21,31 @@ game logic, and screen rendering, communicating via queues, semaphores, and mute
 - STM32CubeMX (used for peripheral and FreeRTOS configuration)
 - ARM GCC toolchain (included with STM32CubeIDE)
 - ST-Link drivers (for flashing and debugging)
+## Hardware Connections
+
+### OLED Display (SSD1306, I2C)
+
+- **SCL** → STM32 Nucleo **PB9**
+- **SDA** → STM32 Nucleo **PB8**
+- **VCC** → **3.3 V**
+- **GND** → **GND**
+
+The OLED display communicates with the STM32 via the I2C interface using pins PB9 (SCL) and PB8 (SDA).
+It is powered by 3.3 V to match the STM32 logic level.
+
+---
+
+### Analog Joystick
+
+- **VRX** → **A0** (ADC channel)
+- **VRY** → **A1** (ADC channel)
+- **+5V** → **3.3 V**
+- **GND** → **GND**
+
+The joystick’s analog outputs (VRX and VRY) are connected to ADC inputs A0 and A1, respectively.
+Although the joystick module provides a +5 V pin, it is connected to **3.3 V** instead.
+This is because the STM32 ADC input range is limited to 3.3 V, and supplying 5 V could exceed the safe voltage range and damage the microcontroller.
+
 
 ---
 
