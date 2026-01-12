@@ -27,11 +27,10 @@ game logic, and screen rendering, communicating via queues, semaphores, and mute
 
 - **SCL** → STM32 Nucleo **PB9**
 - **SDA** → STM32 Nucleo **PB8**
-- **VCC** → **3.3 V**
+- **VCC** → **5 V**
 - **GND** → **GND**
 
 The OLED display communicates with the STM32 via the I2C interface using pins PB9 (SCL) and PB8 (SDA).
-It is powered by 3.3 V to match the STM32 logic level.
 
 ---
 
